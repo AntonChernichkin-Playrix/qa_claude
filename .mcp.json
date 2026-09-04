@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "qase": {
+      "command": "npx",
+      "args": ["-y", "@qase/mcp-server"],
+      "env": {
+        "QASE_API_TOKEN": "${QASE_API_TOKEN}",
+        "QASE_API_DOMAIN": "api.qase.io",
+        "QASE_API_PROTOCOL": "https"
+      }
+    },
+    "asana": {
+      "command": "npx",
+      "args": ["-y", "@roychri/mcp-server-asana"],
+      "env": {
+        "ASANA_ACCESS_TOKEN": "${ASANA_ACCESS_TOKEN}"
+      }
+    }
+  }
+}
