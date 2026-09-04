@@ -1,6 +1,23 @@
 # qa_claude
 
-В проекте настроены MCP-серверы **Qase** и **Asana** ([.mcp.json](.mcp.json)) — Claude Code подключает их автоматически, отдельный `claude mcp add` не нужен. Требуется только один раз положить свои токены в переменные окружения.
+Инструменты QA для Claude Code: MCP-серверы Qase и Asana плюс скилл декомпозиции ТЗ.
+
+## Скиллы
+
+**`/qa-decomposition`** — [.claude/skills/qa-decomposition/](.claude/skills/qa-decomposition/)
+
+Разбивает ТЗ фичи на QA-задачи и заводит их подзадачами в Asana. Порядок: найти ТЗ → собрать декомпозицию в `docs/decomposition-<фича>.md` → уточнить неприменимые обязательные блоки → ревью → правки → создание подзадач по присланной ссылке. В Asana ничего не создаётся до явного согласования.
+
+Внутри скилла:
+- [SKILL.md](.claude/skills/qa-decomposition/SKILL.md) — порядок работы и правила нарезки ТЗ на блоки
+- [reference/template-blocks.md](.claude/skills/qa-decomposition/reference/template-blocks.md) — 38 обязательных разделов из шаблона «(ХХХ) Шаблон. Декомпозиция фичи со стороны QA»
+- [reference/format.md](.claude/skills/qa-decomposition/reference/format.md) — формат имени и тела задачи
+- [reference/decomposition-template-asana.md](.claude/skills/qa-decomposition/reference/decomposition-template-asana.md) — сырая выгрузка шаблона
+- [reference/decomposition-example-idl.md](.claude/skills/qa-decomposition/reference/decomposition-example-idl.md) — готовая декомпозиция IDL на 46 задач как образец
+
+## MCP
+
+Настроены серверы **Qase** и **Asana** ([.mcp.json](.mcp.json)) — Claude Code подключает их автоматически, отдельный `claude mcp add` не нужен. Требуется только один раз положить свои токены в переменные окружения.
 
 Требования: **Node.js 20+**.
 
