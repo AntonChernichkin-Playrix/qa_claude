@@ -12,8 +12,7 @@
 - [SKILL.md](.claude/skills/qa-decomposition/SKILL.md) — порядок работы и правила нарезки ТЗ на блоки
 - [reference/template-blocks.md](.claude/skills/qa-decomposition/reference/template-blocks.md) — 38 обязательных разделов из шаблона «(ХХХ) Шаблон. Декомпозиция фичи со стороны QA»
 - [reference/format.md](.claude/skills/qa-decomposition/reference/format.md) — формат имени и тела задачи
-- [reference/decomposition-template-asana.md](.claude/skills/qa-decomposition/reference/decomposition-template-asana.md) — сырая выгрузка шаблона
-- [reference/decomposition-example-idl.md](.claude/skills/qa-decomposition/reference/decomposition-example-idl.md) — готовая декомпозиция IDL на 46 задач как образец
+- [reference/decomposition-example-idl.md](.claude/skills/qa-decomposition/reference/decomposition-example-idl.md) — пример состава: 45 блоков реальной фичи, их порядок и решения о дроблении
 
 ## MCP
 
